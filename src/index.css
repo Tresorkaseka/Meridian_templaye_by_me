@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: hsl(240 10% 3.9%);
+  --color-foreground: hsl(0 0% 98%);
+
+  --color-accent: hsl(330 80% 60%);
+  --color-accent-electric: hsl(198 90% 50%);
+
+  --font-sans: "Cabinet Grotesk", "Satoshi", "Inter", system-ui, sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, monospace;
+}
+
+@layer base {
+  body {
+    @apply bg-zinc-950 text-zinc-50 antialiased font-sans selection:bg-rose-500/30 selection:text-white;
+  }
+}
+
+@layer components {
+
+  /* Liquid Glass Panels */
+  .glass-panel {
+    @apply bg-zinc-900/30 backdrop-blur-xl border border-white/10 shadow-[inset_0_1px_0_rgba(255, 255, 255, 0.1), _0_20px_40px_-15px_rgba(0, 0, 0, 0.5)];
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-br from-white via-white to-white/40;
+  }
+
+  .text-accent-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-rose-500 to-cyan-400;
+  }
+}
+
+@layer utilities {
+  .perpetual-shimmer {
+    background: linear-gradient(to right, transparent 0%, rgba(255, 255, 255, 0.05) 50%, transparent 100%);
+    background-size: 200% 100%;
+    animation: shimmer 3s infinite linear;
+  }
+
+  @keyframes shimmer {
+    0% {
+      background-position: 200% 0;
+    }
+
+    100% {
+      background-position: -200% 0;
+    }
+  }
+}
