@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Meridian — Team Intelligence Platform</title>
-  <meta name="description" content="Meridian surfaces what your team actually does. Real-time analytics that predict blockers before they cost you a sprint." />
+  <meta name="description"
+    content="Meridian surfaces what your team actually does. Real-time analytics that predict blockers before they cost you a sprint." />
   <meta name="keywords" content="team analytics, SaaS, productivity, insight, workflow" />
   <meta property="og:title" content="Meridian — Team Intelligence Platform" />
   <meta property="og:description" content="Meridian surfaces what your team actually does." />
@@ -13,7 +15,9 @@
   <!-- Fonts: Outfit + JetBrains Mono (taste-skill: no Inter) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
 
   <!-- Phosphor Icons CDN -->
   <script src="https://unpkg.com/@phosphor-icons/web@2.1.1/src/index.js"></script>
@@ -24,6 +28,7 @@
 
   <link rel="stylesheet" href="src/style.css" />
 </head>
+
 <body>
 
   <!-- ═══════════════════════════ NAVBAR ═══════════════════════════ -->
@@ -31,9 +36,9 @@
     <div class="nav__inner">
       <a href="/" class="nav__logo" aria-label="Meridian home">
         <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
-          <rect width="28" height="28" rx="7" fill="#10b77f"/>
-          <path d="M7 14L14 7L21 14L14 21L7 14Z" fill="#0f0f10" stroke="#0f0f10" stroke-width="1"/>
-          <circle cx="14" cy="14" r="3" fill="#10b77f"/>
+          <rect width="28" height="28" rx="7" fill="#10b77f" />
+          <path d="M7 14L14 7L21 14L14 21L7 14Z" fill="#0f0f10" stroke="#0f0f10" stroke-width="1" />
+          <circle cx="14" cy="14" r="3" fill="#10b77f" />
         </svg>
         <span>Meridian</span>
       </a>
@@ -83,7 +88,7 @@
             <span>Now in public beta · 3,400+ teams</span>
           </div>
           <h1 class="hero__headline reveal-item">
-            Know what your team<br/>
+            Know what your team<br />
             <span class="text--accent" id="scrambleText">actually ships</span>
           </h1>
           <p class="hero__sub reveal-item">
@@ -102,10 +107,14 @@
           </div>
           <div class="hero__social-proof reveal-item">
             <div class="proof__avatars" aria-label="Customer avatars">
-              <img src="https://picsum.photos/seed/meridiana1/40/40" alt="Customer avatar" width="40" height="40" loading="lazy" />
-              <img src="https://picsum.photos/seed/meridiana2/40/40" alt="Customer avatar" width="40" height="40" loading="lazy" />
-              <img src="https://picsum.photos/seed/meridiana3/40/40" alt="Customer avatar" width="40" height="40" loading="lazy" />
-              <img src="https://picsum.photos/seed/meridiana4/40/40" alt="Customer avatar" width="40" height="40" loading="lazy" />
+              <img src="https://picsum.photos/seed/meridiana1/40/40" alt="Customer avatar" width="40" height="40"
+                loading="lazy" />
+              <img src="https://picsum.photos/seed/meridiana2/40/40" alt="Customer avatar" width="40" height="40"
+                loading="lazy" />
+              <img src="https://picsum.photos/seed/meridiana3/40/40" alt="Customer avatar" width="40" height="40"
+                loading="lazy" />
+              <img src="https://picsum.photos/seed/meridiana4/40/40" alt="Customer avatar" width="40" height="40"
+                loading="lazy" />
             </div>
             <div class="proof__text">
               <div class="proof__stars" aria-label="5 out of 5 stars">
@@ -130,7 +139,8 @@
               <span class="chrome__dot" style="background:#28c840"></span>
               <span class="chrome__title">meridian.app / overview</span>
             </div>
-            <img src="/dashboard.png" alt="Meridian analytics dashboard showing team performance metrics" class="visual__img" width="720" height="480" loading="eager" />
+            <img src="./public/dashboard.png" alt="Meridian analytics dashboard showing team performance metrics"
+              class="visual__img" width="720" height="480" loading="eager" />
           </div>
         </div>
       </div>
@@ -193,7 +203,7 @@
       <div class="container">
         <header class="section-header reveal-item">
           <span class="section-tag">Features</span>
-          <h2 class="section-title">Built for how teams<br/>actually work</h2>
+          <h2 class="section-title">Built for how teams<br />actually work</h2>
           <p class="section-sub">
             We replaced guesswork with instrumentation. Every view in Meridian
             is grounded in data your toolchain already captures.
@@ -206,12 +216,13 @@
           <!-- Card 1: Wide (2fr) - Live pulse chart -->
           <article class="bento__card bento__card--wide bento__card--dark reveal-item" role="listitem">
             <div class="bento__img-bg" aria-hidden="true">
-              <img src="/flow.png" alt="" width="800" height="300" loading="lazy" />
+              <img src="./public/flow.png" alt="" width="800" height="300" loading="lazy" />
             </div>
             <div class="bento__content">
               <div class="bento__tag">Intelligence</div>
               <h3 class="bento__title">Live team pulse, updated every 47 seconds</h3>
-              <p class="bento__desc">Meridian reads commit velocity, PR review lag, and ticket throughput simultaneously. No manual standups required.</p>
+              <p class="bento__desc">Meridian reads commit velocity, PR review lag, and ticket throughput
+                simultaneously. No manual standups required.</p>
             </div>
             <div class="bento__mini-chart" aria-label="Live activity chart">
               <div class="sparkline" id="sparkline1"></div>
@@ -225,8 +236,9 @@
             </div>
             <div class="bento__content">
               <div class="bento__tag">Blocker radar</div>
-              <h3 class="bento__title">Flags blockers<br/>before they land</h3>
-              <p class="bento__desc">Detects when a PR sits idle 18h longer than your team's historical norm. Acts, not reports.</p>
+              <h3 class="bento__title">Flags blockers<br />before they land</h3>
+              <p class="bento__desc">Detects when a PR sits idle 18h longer than your team's historical norm. Acts, not
+                reports.</p>
             </div>
             <div class="bento__metric" aria-label="63% fewer missed deadlines">
               <span class="metric__val">63%</span>
@@ -241,8 +253,9 @@
             </div>
             <div class="bento__content">
               <div class="bento__tag">Trend analysis</div>
-              <h3 class="bento__title">12-week velocity<br/>forecasting</h3>
-              <p class="bento__desc">Predict sprint completion with 89.4% accuracy using temporal embeddings of your delivery history.</p>
+              <h3 class="bento__title">12-week velocity<br />forecasting</h3>
+              <p class="bento__desc">Predict sprint completion with 89.4% accuracy using temporal embeddings of your
+                delivery history.</p>
             </div>
             <div class="bento__counter" role="timer" aria-live="polite" aria-label="Teams using Meridian">
               <span class="counter__val" id="counterVal">3,847</span>
@@ -257,8 +270,9 @@
             </div>
             <div class="bento__content">
               <div class="bento__tag">Integrations</div>
-              <h3 class="bento__title">Connect in under<br/>4 minutes</h3>
-              <p class="bento__desc">Linear, GitHub, GitLab, Jira, Notion. OAuth. No engineer time needed to configure data pipelines.</p>
+              <h3 class="bento__title">Connect in under<br />4 minutes</h3>
+              <p class="bento__desc">Linear, GitHub, GitLab, Jira, Notion. OAuth. No engineer time needed to configure
+                data pipelines.</p>
             </div>
             <div class="bento__integrations" aria-label="Supported integrations">
               <span class="integration-chip"><i class="ph ph-github-logo"></i> GitHub</span>
@@ -275,8 +289,9 @@
             </div>
             <div class="bento__content">
               <div class="bento__tag">Security</div>
-              <h3 class="bento__title">SOC 2 Type II.<br/>GDPR native.</h3>
-              <p class="bento__desc">Data stays in your region. Source code never stored. Read-only OAuth scopes, always.</p>
+              <h3 class="bento__title">SOC 2 Type II.<br />GDPR native.</h3>
+              <p class="bento__desc">Data stays in your region. Source code never stored. Read-only OAuth scopes,
+                always.</p>
             </div>
             <div class="bento__badges" aria-label="Security certifications">
               <span class="sec-badge">SOC 2 II</span>
@@ -290,7 +305,8 @@
             <div class="bento__content">
               <div class="bento__tag">AI Query</div>
               <h3 class="bento__title">Ask anything about your team's output</h3>
-              <p class="bento__desc">Meridian's embedded LLM answers natural-language questions about your engineering data.</p>
+              <p class="bento__desc">Meridian's embedded LLM answers natural-language questions about your engineering
+                data.</p>
             </div>
             <div class="bento__terminal" aria-label="AI query input example">
               <div class="terminal__bar" aria-hidden="true">
@@ -339,7 +355,7 @@
       <div class="container">
         <header class="section-header reveal-item">
           <span class="section-tag">Customers</span>
-          <h2 class="section-title">Engineers who stopped<br/>guessing</h2>
+          <h2 class="section-title">Engineers who stopped<br />guessing</h2>
         </header>
 
         <div class="testimonials__grid">
@@ -358,7 +374,8 @@
               worth $340K in ARR we'd already committed to."
             </p>
             <footer class="testi__author">
-              <img src="https://picsum.photos/seed/testi-rw/48/48" alt="Portrait of Rowe Callahan" width="48" height="48" loading="lazy" />
+              <img src="https://picsum.photos/seed/testi-rw/48/48" alt="Portrait of Rowe Callahan" width="48"
+                height="48" loading="lazy" />
               <div>
                 <strong>Rowe Callahan</strong>
                 <span>VP Engineering · Nordhaven</span>
@@ -379,7 +396,8 @@
               The dashboards are just... better. Engineers actually look at them."
             </p>
             <footer class="testi__author">
-              <img src="https://picsum.photos/seed/testi-mk/48/48" alt="Portrait of Minka Søren" width="48" height="48" loading="lazy" />
+              <img src="https://picsum.photos/seed/testi-mk/48/48" alt="Portrait of Minka Søren" width="48" height="48"
+                loading="lazy" />
               <div>
                 <strong>Minka Søren</strong>
                 <span>CTO · Arcform</span>
@@ -396,11 +414,12 @@
               <i class="ph-fill ph-star" aria-hidden="true"></i>
             </div>
             <p class="testi__quote">
-              "Setup took 3 minutes 47 seconds. I timed it. We were seeing  
+              "Setup took 3 minutes 47 seconds. I timed it. We were seeing
               data the same morning."
             </p>
             <footer class="testi__author">
-              <img src="https://picsum.photos/seed/testi-dl/48/48" alt="Portrait of Dael Lortie" width="48" height="48" loading="lazy" />
+              <img src="https://picsum.photos/seed/testi-dl/48/48" alt="Portrait of Dael Lortie" width="48" height="48"
+                loading="lazy" />
               <div>
                 <strong>Dael Lortie</strong>
                 <span>Staff Engineer · Veltrix</span>
@@ -421,7 +440,8 @@
               pull up the dashboard. The team loves it."
             </p>
             <footer class="testi__author">
-              <img src="https://picsum.photos/seed/testi-pb/48/48" alt="Portrait of Petra Baumert" width="48" height="48" loading="lazy" />
+              <img src="https://picsum.photos/seed/testi-pb/48/48" alt="Portrait of Petra Baumert" width="48"
+                height="48" loading="lazy" />
               <div>
                 <strong>Petra Baumert</strong>
                 <span>Engineering Manager · Fenwick Labs</span>
@@ -438,7 +458,7 @@
       <div class="container">
         <header class="section-header reveal-item">
           <span class="section-tag">Pricing</span>
-          <h2 class="section-title">Simple. Predictable.<br/>No hidden tolls.</h2>
+          <h2 class="section-title">Simple. Predictable.<br />No hidden tolls.</h2>
         </header>
 
         <div class="pricing__grid">
@@ -514,7 +534,8 @@
           </div>
           <div class="cta__content">
             <h2 class="cta__headline">Ready to see what your team is actually doing?</h2>
-            <p class="cta__sub">Connect in under 4 minutes. No engineer time, no data pipeline setup. Cancel any time.</p>
+            <p class="cta__sub">Connect in under 4 minutes. No engineer time, no data pipeline setup. Cancel any time.
+            </p>
             <div class="cta__actions">
               <a href="#" class="btn btn--white btn--lg" aria-label="Start free trial">
                 <i class="ph ph-rocket-launch" aria-hidden="true"></i>
@@ -537,9 +558,9 @@
       <div class="footer__brand">
         <a href="/" class="nav__logo" aria-label="Meridian home">
           <svg width="24" height="24" viewBox="0 0 28 28" fill="none" aria-hidden="true">
-            <rect width="28" height="28" rx="7" fill="#10b77f"/>
-            <path d="M7 14L14 7L21 14L14 21L7 14Z" fill="#0f0f10"/>
-            <circle cx="14" cy="14" r="3" fill="#10b77f"/>
+            <rect width="28" height="28" rx="7" fill="#10b77f" />
+            <path d="M7 14L14 7L21 14L14 21L7 14Z" fill="#0f0f10" />
+            <circle cx="14" cy="14" r="3" fill="#10b77f" />
           </svg>
           <span>Meridian</span>
         </a>
@@ -580,4 +601,5 @@
 
   <script src="src/main.js"></script>
 </body>
+
 </html>
