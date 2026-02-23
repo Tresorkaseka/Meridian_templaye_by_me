@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+
 import { TwitterLogo, GithubLogo, DiscordLogo } from '@phosphor-icons/react';
 
 export default function Footer() {
